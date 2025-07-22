@@ -11,3 +11,14 @@ def get_count_characters(book_text):
         else:
             chars[lower_char] = 1
     return chars
+
+def sort_on(dict_chars):
+    return dict_chars["num"]
+
+def sorted_dict(dict_chars):
+    empty_list = []
+    for char in dict_chars:
+        count = dict_chars[char]
+        empty_list.append({"char": char, "num": count})
+    empty_list.sort(reverse=True, key=sort_on)
+    return empty_list
