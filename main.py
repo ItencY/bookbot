@@ -33,5 +33,3 @@ def print_report(book_path, num_words, chars_sorted_list):
 
 
 main()
-
-main()
